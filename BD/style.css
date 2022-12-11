@@ -2,10 +2,25 @@
 
 :root {
     --crab-size: min(30vh, 30vw);
-/*    --crab-size: 200px;*/
+    --crab-arm-size: -webkit-calc(var(--crab-size)/20);
     --crab-arm-size: calc(var(--crab-size)/20);
     --sun-diameter: min(12vh, 12vw);
-    --cake-layer-color: 
+    --cake-layer-color:
+        0 -webkit-calc(var(--crab-size) * 0.01 * 1) 0px #553c13,
+        0 -webkit-calc(var(--crab-size) * 0.01 * 2) 0px #553c13,
+        0 -webkit-calc(var(--crab-size) * 0.01 * 3) 0px #553c13,
+        0 -webkit-calc(var(--crab-size) * 0.01 * 4) 0px #553c13,
+        0 -webkit-calc(var(--crab-size) * 0.01 * 5) 0px #553c13,
+        0 -webkit-calc(var(--crab-size) * 0.01 * 6) 0px #553c13,
+        0 -webkit-calc(var(--crab-size) * 0.01 * 7) 0px #553c13,
+        0 -webkit-calc(var(--crab-size) * 0.01 * 8) 0px #553c13,
+        0 -webkit-calc(var(--crab-size) * 0.01 * 9) 0px #553c13,
+        0 -webkit-calc(var(--crab-size) * 0.01 * 10) 0px #553c13,
+        0 -webkit-calc(var(--crab-size) * 0.01 * 11) 0px #553c13,
+        0 -webkit-calc(var(--crab-size) * 0.01 * 12) 0px #553c13,
+        0 -webkit-calc(var(--crab-size) * 0.01 * 13) 0px #553c13,
+        0 -webkit-calc(var(--crab-size) * 0.01 * 14) 0px #553c13,
+        0 -webkit-calc(var(--crab-size) * 0.01 * 15) 0px #553c13,
         0 calc(var(--crab-size) * 0.01 * 1) 0px #553c13,
         0 calc(var(--crab-size) * 0.01 * 2) 0px #553c13,
         0 calc(var(--crab-size) * 0.01 * 3) 0px #553c13,
@@ -122,12 +137,16 @@ p {
     height: var(--crab-size);
     -webkit-animation: moving-crab 10s linear;
     animation: moving-crab 10s linear;
+    top: -webkit-calc(50vh - 0.5 * var(--crab-size));
+    right: -webkit-calc(50vw - 0.5 * var(--crab-size));
     top: calc(50vh - 0.5 * var(--crab-size));
     right: calc(50vw - 0.5 * var(--crab-size));
 }
 
 .crab-body {
     position: absolute;
+    top: -webkit-calc(50% - 30%);
+    right: -webkit-calc(50% - 37.5%);
     top: calc(50% - 30%);
     right: calc(50% - 37.5%);
     width: 75%;
@@ -281,6 +300,10 @@ p {
     left: -5%;
     width: 25%;
     height: 25%;
+    border-top-left-radius: -webkit-calc(var(--crab-size) * 0.15);
+    border-top: solid #cc0000 -webkit-calc(var(--crab-size) * 0.075);
+    -webkit-transform-origin: 100% -webkit-calc(var(--crab-size) * 0.075);
+    transform-origin: 100% -webkit-calc(var(--crab-size) * 0.075);
     border-top-left-radius: calc(var(--crab-size) * 0.15);
     border-top: solid #cc0000 calc(var(--crab-size) * 0.075);
     -webkit-transform-origin: 100% calc(var(--crab-size) * 0.075);
@@ -301,6 +324,10 @@ p {
     left: 6.5%;
     width: 20%;
     height: 20%;
+    border-top-left-radius: -webkit-calc(var(--crab-size) * 0.15);
+    border-top: solid #cc0000 -webkit-calc(var(--crab-size) * 0.075);
+    -webkit-transform-origin: 100% -webkit-calc(var(--crab-size) * 0.075);
+    transform-origin: 100% -webkit-calc(var(--crab-size) * 0.075);
     border-top-left-radius: calc(var(--crab-size) * 0.15);
     border-top: solid #cc0000 calc(var(--crab-size) * 0.075);
     -webkit-transform-origin: 100% calc(var(--crab-size) * 0.075);
@@ -321,6 +348,10 @@ p {
     left: 20%;
     width: 15%;
     height: 15%;
+    border-top-left-radius: -webkit-calc(var(--crab-size) * 0.15);
+    border-top: solid #cc0000 -webkit-calc(var(--crab-size) * 0.075);
+    -webkit-transform-origin: 100% -webkit-calc(var(--crab-size) * 0.075);
+    transform-origin: 100% -webkit-calc(var(--crab-size) * 0.075);
     border-top-left-radius: calc(var(--crab-size) * 0.15);
     border-top: solid #cc0000 calc(var(--crab-size) * 0.075);
     -webkit-transform-origin: 100% calc(var(--crab-size) * 0.075);
@@ -339,6 +370,10 @@ p {
     left: 80%;
     width: 25%;
     height: 25%;
+    border-top-right-radius: -webkit-calc(var(--crab-size) * 0.15);
+    border-top: solid #cc0000 -webkit-calc(var(--crab-size) * 0.075);
+    -webkit-transform-origin: 0 -webkit-calc(var(--crab-size) * 0.075);
+    transform-origin: 0 -webkit-calc(var(--crab-size) * 0.075);
     border-top-right-radius: calc(var(--crab-size) * 0.15);
     border-top: solid #cc0000 calc(var(--crab-size) * 0.075);
     -webkit-transform-origin: 0 calc(var(--crab-size) * 0.075);
@@ -359,6 +394,10 @@ p {
     left: 73.5%;
     width: 20%;
     height: 20%;
+    border-top-right-radius: -webkit-calc(var(--crab-size) * 0.15);
+    border-top: solid #cc0000 -webkit-calc(var(--crab-size) * 0.075);
+    -webkit-transform-origin: 0 -webkit-calc(var(--crab-size) * 0.075);
+    transform-origin: 0 -webkit-calc(var(--crab-size) * 0.075);
     border-top-right-radius: calc(var(--crab-size) * 0.15);
     border-top: solid #cc0000 calc(var(--crab-size) * 0.075);
     -webkit-transform-origin: 0 calc(var(--crab-size) * 0.075);
@@ -379,6 +418,10 @@ p {
     left: 65%;
     width: 15%;
     height: 15%;
+    border-top-right-radius: -webkit-calc(var(--crab-size) * 0.15);
+    border-top: solid #cc0000 -webkit-calc(var(--crab-size) * 0.075);
+    -webkit-transform-origin: 0 -webkit-calc(var(--crab-size) * 0.075);
+    transform-origin: 0 -webkit-calc(var(--crab-size) * 0.075);
     border-top-right-radius: calc(var(--crab-size) * 0.15);
     border-top: solid #cc0000 calc(var(--crab-size) * 0.075);
     -webkit-transform-origin: 0 calc(var(--crab-size) * 0.075);
@@ -405,13 +448,20 @@ p {
 
 .plate {
     position: absolute;
+    top: -webkit-calc(var(--crab-size) * -0.275);
+    right: -webkit-calc(var(--crab-size) * -0.25);
     top: calc(var(--crab-size) * -0.275);
     right: calc(var(--crab-size) * -0.25);
     width: 150%;
     height: 25%;
     border-radius: 50%;
     background-color: #ccc;
-    box-shadow: 
+    box-shadow:
+        0 -webkit-calc(var(--crab-size) * 0.005 * 2) 0 0 #bbb,
+        0 -webkit-calc(var(--crab-size) * 0.005 * 3) 0 0 #aaa,
+        0 -webkit-calc(var(--crab-size) * 0.005 * 4) 0 0 #999,
+        0 -webkit-calc(var(--crab-size) * 0.005 * 5) 0 0 #888,
+        0 -webkit-calc(var(--crab-size) * 0.005 * 6) 0 0 #777,
         0 calc(var(--crab-size) * 0.005 * 2) 0 0 #bbb,
         0 calc(var(--crab-size) * 0.005 * 3) 0 0 #aaa,
         0 calc(var(--crab-size) * 0.005 * 4) 0 0 #999,
@@ -421,6 +471,7 @@ p {
 
 .layer {
     position: absolute;
+    right: -webkit-calc(var(--crab-size) * -0.125);
     right: calc(var(--crab-size) * -0.125);
     width: 125%;
     height: 25%;
@@ -430,24 +481,34 @@ p {
 }
 
 .bottom-layer {
+    top: -webkit-calc(var(--crab-size) * -0.45);
     top: calc(var(--crab-size) * -0.45);
     box-shadow: var(--cake-layer-color)
 }
 
 .middle-layer {
+    top: -webkit-calc(var(--crab-size) * -0.6);
     top: calc(var(--crab-size) * -0.6);
     box-shadow: var(--cake-layer-color),
+        0 -webkit-calc(var(--crab-size) * 0.175) 0 0 #fff,
         0 calc(var(--crab-size) * 0.175) 0 0 #fff;
 }
 
 .top-layer {
+    top: -webkit-calc(var(--crab-size) * -0.775);
     top: calc(var(--crab-size) * -0.775);
     box-shadow: var(--cake-layer-color),
+        0 -webkit-calc(var(--crab-size) * 0.175) 0 0 #fff,
         0 calc(var(--crab-size) * 0.175) 0 0 #fff;
 }
 
 .drip1 {
     position: absolute;
+    top: -webkit-calc(var(--crab-size) * -0.6);
+    left: -webkit-calc(var(--crab-size) * -0.075);
+    width: -webkit-calc(var(--crab-size) * 0.15);
+    height: -webkit-calc(var(--crab-size) * 0.45);
+    border-radius: -webkit-calc(var(--crab-size) * 0.025) -webkit-calc(var(--crab-size) * 0.025) 50% 50%;
     top: calc(var(--crab-size) * -0.6);
     left: calc(var(--crab-size) * -0.075);
     width: calc(var(--crab-size) * 0.15);
@@ -461,6 +522,11 @@ p {
 
 .drip2 {
     position: absolute;
+    top: -webkit-calc(var(--crab-size) * -0.55);
+    left: -webkit-calc(var(--crab-size) * 0.3);
+    width: -webkit-calc(var(--crab-size) * 0.15);
+    height: -webkit-calc(var(--crab-size) * 0.4);
+    border-radius: -webkit-calc(var(--crab-size) * 0.025) -webkit-calc(var(--crab-size) * 0.025) 50% 50%;
     top: calc(var(--crab-size) * -0.55);
     left: calc(var(--crab-size) * 0.3);
     width: calc(var(--crab-size) * 0.15);
@@ -474,6 +540,11 @@ p {
 
 .drip3 {
     position: absolute;
+    top: -webkit-calc(var(--crab-size) * -0.575);
+    right: -webkit-calc(var(--crab-size) * 0.15);
+    width: -webkit-calc(var(--crab-size) * 0.15);
+    height: -webkit-calc(var(--crab-size) * 0.45);
+    border-radius: -webkit-calc(var(--crab-size) * 0.025) -webkit-calc(var(--crab-size) * 0.025) 50% 50%;
     top: calc(var(--crab-size) * -0.575);
     right: calc(var(--crab-size) * 0.15);
     width: calc(var(--crab-size) * 0.15);
@@ -487,6 +558,11 @@ p {
 
 .drip4 {
     position: absolute;
+    top: -webkit-calc(var(--crab-size) * -0.6);
+    right: -webkit-calc(var(--crab-size) * -0.05);
+    width: -webkit-calc(var(--crab-size) * 0.15);
+    height: -webkit-calc(var(--crab-size) * 0.2);
+    border-radius: -webkit-calc(var(--crab-size) * 0.025) -webkit-calc(var(--crab-size) * 0.025) 50% 50%;
     top: calc(var(--crab-size) * -0.6);
     right: calc(var(--crab-size) * -0.05);
     width: calc(var(--crab-size) * 0.15);
@@ -500,6 +576,11 @@ p {
 
 .drip5 {
     position: absolute;
+    top: -webkit-calc(var(--crab-size) * -0.55);
+    right: -webkit-calc(var(--crab-size) * 0.35);
+    width: -webkit-calc(var(--crab-size) * 0.15);
+    height: -webkit-calc(var(--crab-size) * 0.3);
+    border-radius: -webkit-calc(var(--crab-size) * 0.025) -webkit-calc(var(--crab-size) * 0.025) 50% 50%;
     top: calc(var(--crab-size) * -0.55);
     right: calc(var(--crab-size) * 0.35);
     width: calc(var(--crab-size) * 0.15);
@@ -511,6 +592,11 @@ p {
 
 .drip6 {
     position: absolute;
+    top: -webkit-calc(var(--crab-size) * -0.6);
+    left: -webkit-calc(var(--crab-size) * 0.1);
+    width: -webkit-calc(var(--crab-size) * 0.15);
+    height: -webkit-calc(var(--crab-size) * 0.35);
+    border-radius: -webkit-calc(var(--crab-size) * 0.025) -webkit-calc(var(--crab-size) * 0.025) 50% 50%;
     top: calc(var(--crab-size) * -0.6);
     left: calc(var(--crab-size) * 0.1);
     width: calc(var(--crab-size) * 0.15);
@@ -526,6 +612,8 @@ p {
     position: absolute;
     width: 100%;
     height: 100%;
+    top: -webkit-calc(var(--crab-size) * -1.175);
+    left: -webkit-calc(var(--crab-size) * 0.275);
     top: calc(var(--crab-size) * -1.175);
     left: calc(var(--crab-size) * 0.275);
     z-index: 1;
@@ -535,6 +623,8 @@ p {
     position: absolute;
     width: 100%;
     height: 100%;
+    top: -webkit-calc(var(--crab-size) * -1.175);
+    left: -webkit-calc(var(--crab-size) * 0.5);
     top: calc(var(--crab-size) * -1.175);
     left: calc(var(--crab-size) * 0.5);
     z-index: 1;
@@ -542,6 +632,10 @@ p {
 
 .candle-foot {
     position: absolute;
+    top: -webkit-calc(var(--crab-size) * 0.5);
+    left: -webkit-calc(var(--crab-size) * 0.1);
+    width: -webkit-calc(var(--crab-size) * 0.025);
+    height: -webkit-calc(var(--crab-size) * 0.025);
     top: calc(var(--crab-size) * 0.5);
     left: calc(var(--crab-size) * 0.1);
     width: calc(var(--crab-size) * 0.025);
@@ -552,6 +646,11 @@ p {
 
 .h-candle-3-top {
     position: absolute;
+    top: -webkit-calc(var(--crab-size) * 0.15);
+    left: -webkit-calc(var(--crab-size) * 0.025);
+    width : -webkit-calc(var(--crab-size) * 0.14);
+    height: -webkit-calc(var(--crab-size) * 0.035);
+    border-radius: -webkit-calc(var(--crab-size) * 0.025) 0 0 -webkit-calc(var(--crab-size) * 0.025);
     top: calc(var(--crab-size) * 0.15);
     left: calc(var(--crab-size) * 0.025);
     width : calc(var(--crab-size) * 0.14);
@@ -561,6 +660,11 @@ p {
 
 .h-candle-3-bottom {
     position: absolute;
+    top: -webkit-calc(var(--crab-size) * 0.465);
+    left: -webkit-calc(var(--crab-size) * 0.025);
+    width : -webkit-calc(var(--crab-size) * 0.14);
+    height: -webkit-calc(var(--crab-size) * 0.035);
+    border-radius: -webkit-calc(var(--crab-size) * 0.025) 0 0 -webkit-calc(var(--crab-size) * 0.025);
     top: calc(var(--crab-size) * 0.465);
     left: calc(var(--crab-size) * 0.025);
     width : calc(var(--crab-size) * 0.14);
@@ -570,6 +674,11 @@ p {
 
 .h-candle-3-middle {
     position: absolute;
+    top: -webkit-calc(var(--crab-size) * 0.305);
+    left: -webkit-calc(var(--crab-size) * 0.065);
+    width : -webkit-calc(var(--crab-size) * 0.105);
+    height: -webkit-calc(var(--crab-size) * 0.035);
+    border-radius: -webkit-calc(var(--crab-size) * 0.025) 0 0 -webkit-calc(var(--crab-size) * 0.025);
     top: calc(var(--crab-size) * 0.305);
     left: calc(var(--crab-size) * 0.065);
     width : calc(var(--crab-size) * 0.105);
@@ -579,6 +688,11 @@ p {
 
 .v-candle-3 {
     position: absolute;
+    top: -webkit-calc(var(--crab-size) * 0.15);
+    left: -webkit-calc(var(--crab-size) * 0.16);
+    width : -webkit-calc(var(--crab-size) * 0.035);
+    height: -webkit-calc(var(--crab-size) * 0.35);
+    border-radius: 0 -webkit-calc(var(--crab-size) * 0.025) -webkit-calc(var(--crab-size) * 0.025) 0;
     top: calc(var(--crab-size) * 0.15);
     left: calc(var(--crab-size) * 0.16);
     width : calc(var(--crab-size) * 0.035);
@@ -588,6 +702,11 @@ p {
 
 .h-candle-2-top {
     position: absolute;
+    top: -webkit-calc(var(--crab-size) * 0.15);
+    left: -webkit-calc(var(--crab-size) * 0.03);
+    width : -webkit-calc(var(--crab-size) * 0.14);
+    height: -webkit-calc(var(--crab-size) * 0.035);
+    border-radius: -webkit-calc(var(--crab-size) * 0.025);
     top: calc(var(--crab-size) * 0.15);
     left: calc(var(--crab-size) * 0.03);
     width : calc(var(--crab-size) * 0.14);
@@ -597,6 +716,11 @@ p {
 
 .h-candle-2-bottom {
     position: absolute;
+    top: -webkit-calc(var(--crab-size) * 0.465);
+    left: -webkit-calc(var(--crab-size) * 0.04);
+    width : -webkit-calc(var(--crab-size) * 0.14);
+    height: -webkit-calc(var(--crab-size) * 0.035);
+    border-radius: 0 -webkit-calc(var(--crab-size) * 0.025) -webkit-calc(var(--crab-size) * 0.025) 0;
     top: calc(var(--crab-size) * 0.465);
     left: calc(var(--crab-size) * 0.04);
     width : calc(var(--crab-size) * 0.14);
@@ -606,6 +730,11 @@ p {
 
 .h-candle-2-middle {
     position: absolute;
+    top: -webkit-calc(var(--crab-size) * 0.305);
+    left: -webkit-calc(var(--crab-size) * 0.025);
+    width : -webkit-calc(var(--crab-size) * 0.14);
+    height: -webkit-calc(var(--crab-size) * 0.035);
+    border-radius: -webkit-calc(var(--crab-size) * 0.025);
     top: calc(var(--crab-size) * 0.305);
     left: calc(var(--crab-size) * 0.025);
     width : calc(var(--crab-size) * 0.14);
@@ -615,6 +744,11 @@ p {
 
 .v-candle-2-right {
     position: absolute;
+    top: -webkit-calc(var(--crab-size) * 0.15);
+    left: -webkit-calc(var(--crab-size) * 0.15);
+    width : -webkit-calc(var(--crab-size) * 0.035);
+    height: -webkit-calc(var(--crab-size) * 0.19);
+    border-radius: 0 -webkit-calc(var(--crab-size) * 0.025) -webkit-calc(var(--crab-size) * 0.025) 0;
     top: calc(var(--crab-size) * 0.15);
     left: calc(var(--crab-size) * 0.15);
     width : calc(var(--crab-size) * 0.035);
@@ -624,6 +758,11 @@ p {
 
 .v-candle-2-left {
     position: absolute;
+    top: -webkit-calc(var(--crab-size) * 0.3225);
+    left: -webkit-calc(var(--crab-size) * 0.025);
+    width : -webkit-calc(var(--crab-size) * 0.035);
+    height: -webkit-calc(var(--crab-size) * 0.175);
+    border-radius: -webkit-calc(var(--crab-size) * 0.025);
     top: calc(var(--crab-size) * 0.3225);
     left: calc(var(--crab-size) * 0.025);
     width : calc(var(--crab-size) * 0.035);
@@ -634,6 +773,12 @@ p {
 
 .v-candle-2-left-shadow {
     position: absolute;
+    top: -webkit-calc(var(--crab-size) * 0.34);
+    left: -webkit-calc(var(--crab-size) * 0.025);
+    width : -webkit-calc(var(--crab-size) * 0.035);
+    height: -webkit-calc(var(--crab-size) * 0.125);
+    border-radius: -webkit-calc(var(--crab-size) * 0.025) 0 0 -webkit-calc(var(--crab-size) * 0.025);
+    box-shadow: -webkit-calc(var(--crab-size) * 0.005) 0px 0 0 #b81b43;
     top: calc(var(--crab-size) * 0.34);
     left: calc(var(--crab-size) * 0.025);
     width : calc(var(--crab-size) * 0.035);
@@ -644,6 +789,11 @@ p {
 
 .h-candle-0-top {
     position: absolute;
+    top: -webkit-calc(var(--crab-size) * 0.15);
+    left: -webkit-calc(var(--crab-size) * 0.025);
+    width : -webkit-calc(var(--crab-size) * 0.14);
+    height: -webkit-calc(var(--crab-size) * 0.035);
+    border-radius: -webkit-calc(var(--crab-size) * 0.025) 0 0 -webkit-calc(var(--crab-size) * 0.025);
     top: calc(var(--crab-size) * 0.15);
     left: calc(var(--crab-size) * 0.025);
     width : calc(var(--crab-size) * 0.14);
@@ -653,6 +803,11 @@ p {
 
 .h-candle-0-bottom {
     position: absolute;
+    top: -webkit-calc(var(--crab-size) * 0.465);
+    left: -webkit-calc(var(--crab-size) * 0.04);
+    width : -webkit-calc(var(--crab-size) * 0.14);
+    height: -webkit-calc(var(--crab-size) * 0.035);
+    border-radius: 0 -webkit-calc(var(--crab-size) * 0.025) -webkit-calc(var(--crab-size) * 0.025) 0;
     top: calc(var(--crab-size) * 0.465);
     left: calc(var(--crab-size) * 0.04);
     width : calc(var(--crab-size) * 0.14);
@@ -662,6 +817,11 @@ p {
 
 .v-candle-0-left {
     position: absolute;
+    top: -webkit-calc(var(--crab-size) * 0.15);
+    left: -webkit-calc(var(--crab-size) * 0.005);
+    width : -webkit-calc(var(--crab-size) * 0.035);
+    height: -webkit-calc(var(--crab-size) * 0.35);
+    border-radius: -webkit-calc(var(--crab-size) * 0.025) 0 0 -webkit-calc(var(--crab-size) * 0.025);
     top: calc(var(--crab-size) * 0.15);
     left: calc(var(--crab-size) * 0.005);
     width : calc(var(--crab-size) * 0.035);
@@ -672,6 +832,12 @@ p {
 
 .v-candle-0-left-shadow {
     position: absolute;
+    top: -webkit-calc(var(--crab-size) * 0.185);
+    left: -webkit-calc(var(--crab-size) * 0.005);
+    width : -webkit-calc(var(--crab-size) * 0.035);
+    height: -webkit-calc(var(--crab-size) * 0.28);
+    border-radius: -webkit-calc(var(--crab-size) * 0.025) 0 0 -webkit-calc(var(--crab-size) * 0.025);
+    box-shadow: -webkit-calc(var(--crab-size) * 0.005) 0px 0 0 #b81b43;
     top: calc(var(--crab-size) * 0.185);
     left: calc(var(--crab-size) * 0.005);
     width : calc(var(--crab-size) * 0.035);
@@ -682,6 +848,11 @@ p {
 
 .v-candle-0-right {
     position: absolute;
+    top: -webkit-calc(var(--crab-size) * 0.15);
+    left: -webkit-calc(var(--crab-size) * 0.16);
+    width : -webkit-calc(var(--crab-size) * 0.035);
+    height: -webkit-calc(var(--crab-size) * 0.35);
+    border-radius: 0 -webkit-calc(var(--crab-size) * 0.025) -webkit-calc(var(--crab-size) * 0.025) 0;
     top: calc(var(--crab-size) * 0.15);
     left: calc(var(--crab-size) * 0.16);
     width : calc(var(--crab-size) * 0.035);
@@ -690,6 +861,7 @@ p {
 }
 
 .candle-stick {
+    box-shadow: -webkit-calc(var(--crab-size) * 0.005) -webkit-calc(var(--crab-size) * -0.01) 0 0 #b81b43;
     box-shadow: calc(var(--crab-size) * 0.005) calc(var(--crab-size) * -0.01) 0 0 #b81b43;
     background-color: #ff74b1;
 }
@@ -698,6 +870,8 @@ p {
     position: absolute;
     top: 4%;
     left: 10%;
+    width: -webkit-calc(var(--crab-size) * 0.025);
+    height: -webkit-calc(var(--crab-size) * 0.1);
     width: calc(var(--crab-size) * 0.025);
     height: calc(var(--crab-size) * 0.1);
     background: linear-gradient(to top, #fff 0, #fff 30%, #000 80%, #000 100%);
@@ -706,6 +880,14 @@ p {
 .flame {
     position: absolute;
     background-color: #ffce00;
+    width: -webkit-calc(var(--crab-size) * 0.045);
+    height: -webkit-calc(var(--crab-size) * 0.105);
+    border-radius: -webkit-calc(var(--crab-size) * 0.05) -webkit-calc(var(--crab-size) * 0.05) -webkit-calc(var(--crab-size) * 0.05) -webkit-calc(var(--crab-size) * 0.05) / -webkit-calc(var(--crab-size) * 0.125) -webkit-calc(var(--crab-size) * 0.125) -webkit-calc(var(--crab-size) * 0.05) -webkit-calc(var(--crab-size) * 0.05);
+    box-shadow:
+        0 0 -webkit-calc(var(--crab-size) * 0.025 * 2) #ffc000,
+        0 0 -webkit-calc(var(--crab-size) * 0.025 * 3) #ffc000,
+        0 0 -webkit-calc(var(--crab-size) * 0.025 * 4) #ffc000,
+        0 0 -webkit-calc(var(--crab-size) * 0.025 * 5) #ffc000;
     width: calc(var(--crab-size) * 0.045);
     height: calc(var(--crab-size) * 0.105);
     border-radius: calc(var(--crab-size) * 0.05) calc(var(--crab-size) * 0.05) calc(var(--crab-size) * 0.05) calc(var(--crab-size) * 0.05) / calc(var(--crab-size) * 0.125) calc(var(--crab-size) * 0.125) calc(var(--crab-size) * 0.05) calc(var(--crab-size) * 0.05);
@@ -728,6 +910,7 @@ p {
     position: absolute;
     width: 100%;
     height: 100%;
+    top: -webkit-calc(var(--crab-size) * -0.75);
     top: calc(var(--crab-size) * -0.75);
     z-index: 2;
 }
@@ -736,6 +919,8 @@ p {
     position: absolute;
     width: 100%;
     height: 100%;
+    top: -webkit-calc(var(--crab-size) * -0.7);
+    left: -webkit-calc(var(--crab-size) * 0.25);
     top: calc(var(--crab-size) * -0.7);
     left: calc(var(--crab-size) * 0.25);
     z-index: 2;
@@ -745,6 +930,8 @@ p {
     position: absolute;
     width: 100%;
     height: 100%;
+    top: -webkit-calc(var(--crab-size) * -0.7);
+    left: -webkit-calc(var(--crab-size) * 0.65);
     top: calc(var(--crab-size) * -0.7);
     left: calc(var(--crab-size) * 0.65);
     z-index: 2;
@@ -754,6 +941,8 @@ p {
     position: absolute;
     width: 100%;
     height: 100%;
+    top: -webkit-calc(var(--crab-size) * -0.75);
+    left: -webkit-calc(var(--crab-size) * 0.9);
     top: calc(var(--crab-size) * -0.75);
     left: calc(var(--crab-size) * 0.9);
     z-index: 2;
@@ -763,6 +952,8 @@ p {
     position: absolute;
     width: 100%;
     height: 100%;
+    top: -webkit-calc(var(--crab-size) * -0.8);
+    left: -webkit-calc(var(--crab-size) * 0.65);
     top: calc(var(--crab-size) * -0.8);
     left: calc(var(--crab-size) * 0.65);
     z-index: 0;
@@ -772,6 +963,8 @@ p {
     position: absolute;
     width: 100%;
     height: 100%;
+    top: -webkit-calc(var(--crab-size) * -0.8);
+    left: -webkit-calc(var(--crab-size) * 0.25);
     top: calc(var(--crab-size) * -0.8);
     left: calc(var(--crab-size) * 0.25);
     z-index: 0;
@@ -875,6 +1068,7 @@ p {
 .stem {
     position: absolute;
     width: 5px;
+    height: -webkit-calc(var(--crab-size) * 0.75);
     height: calc(var(--crab-size) * 0.75);
     background: linear-gradient(to right, #006838, #00532c, #006838);
     border-radius: 0 0 2px 2px;
@@ -884,6 +1078,10 @@ p {
     position: absolute;
     width: 0;
     height: 0;
+    border-top: -webkit-calc(var(--crab-size) * 0.04) solid #006838;
+    border-left: -webkit-calc(var(--crab-size) * 0.025) solid transparent;
+    border-bottom: -webkit-calc(var(--crab-size) * 0.025) solid transparent; 
+    border-right: -webkit-calc(var(--crab-size) * 0.025) solid transparent;
     border-top: calc(var(--crab-size) * 0.04) solid #006838;
     border-left: calc(var(--crab-size) * 0.025) solid transparent;
     border-bottom: calc(var(--crab-size) * 0.025) solid transparent; 
@@ -894,6 +1092,7 @@ p {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
     top: 30%;
+    right: -webkit-calc(100% + -webkit-calc(var(--crab-size) / 200));
     right: calc(100% + calc(var(--crab-size) / 200));
 }
 
@@ -901,17 +1100,23 @@ p {
     -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg);
     top: 60%;
+    left: -webkit-calc(100% + -webkit-calc(var(--crab-size) / 200));
     left: calc(100% + calc(var(--crab-size) / 200));
 }
 
 .petal {
     position: absolute;
+    width: -webkit-calc(var(--crab-size) * 0.225);
+    height: -webkit-calc(var(--crab-size) * 0.4);
     width: calc(var(--crab-size) * 0.225);
     height: calc(var(--crab-size) * 0.4);
 }
 
 .front-petal:nth-child(2n + 1) {
     background-color: #ee0000;
+    border-radius: 0 -webkit-calc(var(--crab-size) * 0.15) 0 -webkit-calc(var(--crab-size) * 0.15);
+    top: -webkit-calc(var(--crab-size) * -0.4);
+    left: -webkit-calc(var(--crab-size) * -0.175);
     border-radius: 0 calc(var(--crab-size) * 0.15) 0 calc(var(--crab-size) * 0.15);
     top: calc(var(--crab-size) * -0.4);
     left: calc(var(--crab-size) * -0.175);
@@ -919,23 +1124,31 @@ p {
 
 .front-petal:nth-child(2n) {
     background-color: #ee0000;
+    border-radius: -webkit-calc(var(--crab-size) * 0.15) 0 -webkit-calc(var(--crab-size) * 0.15) 0;
+    top: -webkit-calc(var(--crab-size) * -0.4);
+    left: -webkit-calc(var(--crab-size) * -0.025);
     border-radius: calc(var(--crab-size) * 0.15) 0 calc(var(--crab-size) * 0.15) 0;
     top: calc(var(--crab-size) * -0.4);
     left: calc(var(--crab-size) * -0.025);
 }
 
 .back-petal {
+    top: -webkit-calc(var(--crab-size) * -0.425);
     top: calc(var(--crab-size) * -0.425);
 }
 
 .back-petal:nth-child(2n + 1) {
     background-color: #ff0000;
+    border-radius: -webkit-calc(var(--crab-size) * 0.15) 0 -webkit-calc(var(--crab-size) * 0.15) 0;
+    left: -webkit-calc(var(--crab-size) * -0.075);
     border-radius: calc(var(--crab-size) * 0.15) 0 calc(var(--crab-size) * 0.15) 0;
     left: calc(var(--crab-size) * -0.075);
 }
 
 .back-petal:nth-child(2n) {
     background-color: #ff0000;
+    border-radius: 0 -webkit-calc(var(--crab-size) * 0.15) 0 -webkit-calc(var(--crab-size) * 0.15);
+    left: -webkit-calc(var(--crab-size) * -0.125);
     border-radius: 0 calc(var(--crab-size) * 0.15) 0 calc(var(--crab-size) * 0.15);
     left: calc(var(--crab-size) * -0.125);
 }
@@ -1109,10 +1322,14 @@ p {
 @-webkit-keyframes moving-crab {
     0% {
         right: -250px;
+        top: -webkit-calc(50vh - 0.5 * var(--crab-size));
         top: calc(50vh - 0.5 * var(--crab-size));
     }
     
     100% {
+        -webkit-transform: translate(250px + -webkit-calc(50vw - 0.5 * var(--crab-size)), 0);
+        transform: translate(250px + -webkit-calc(50vw - 0.5 * var(--crab-size)), 0);
+        top: -webkit-calc(50vh - 0.5 * var(--crab-size));
         -webkit-transform: translate(250px + calc(50vw - 0.5 * var(--crab-size)), 0);
         transform: translate(250px + calc(50vw - 0.5 * var(--crab-size)), 0);
         top: calc(50vh - 0.5 * var(--crab-size));
@@ -1122,10 +1339,14 @@ p {
 @keyframes moving-crab {
     0% {
         right: -250px;
+        top: -webkit-calc(50vh - 0.5 * var(--crab-size));
         top: calc(50vh - 0.5 * var(--crab-size));
     }
     
     100% {
+        -webkit-transform: translate(250px + -webkit-calc(50vw - 0.5 * var(--crab-size)), 0);
+        transform: translate(250px + -webkit-calc(50vw - 0.5 * var(--crab-size)), 0);
+        top: -webkit-calc(50vh - 0.5 * var(--crab-size));
         -webkit-transform: translate(250px + calc(50vw - 0.5 * var(--crab-size)), 0);
         transform: translate(250px + calc(50vw - 0.5 * var(--crab-size)), 0);
         top: calc(50vh - 0.5 * var(--crab-size));
