@@ -116,8 +116,8 @@ p {
     width: var(--crab-size);
     height: var(--crab-size);
     animation: moving-crab 10s linear;
-    top: calc(50% - 0.5 * var(--crab-size));
-    right: calc(50% - 0.5 * var(--crab-size));
+    top: calc(50vh - 0.5 * var(--crab-size));
+    right: calc(50vw - 0.5 * var(--crab-size));
 }
 
 .crab-body {
