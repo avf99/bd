@@ -271,7 +271,7 @@ p {
     background: linear-gradient(#cc0000 0%, #cc0000 50%, transparent 50%, transparent 100%);
     border-radius: 50%;
     left: -10%;
-    -webkit-transform: rotate(-135deg)
+    -webkit-transform: rotate(135deg)
     transform: rotate(135deg);
 }
 
@@ -816,9 +816,9 @@ p {
 
 .rose1 {
     left: 25%;
-    -webkit-
-    -webkit-
-    -webkit-
+    -webkit-animation: flower-drop1 5s;
+    -webkit-animation-delay: 5s;
+    -webkit-animation-fill-mode: forwards;
     animation: flower-drop1 5s;
     animation-delay: 5s;
     animation-fill-mode: forwards;
@@ -826,9 +826,9 @@ p {
 
 .rose2 {
     left: 25%;
-    -webkit-
-    -webkit-
-    -webkit-
+    -webkit-animation: flower-drop2 5s;
+    -webkit-animation-delay: 5.5s;
+    -webkit-animation-fill-mode: forwards;
     animation: flower-drop2 5s;
     animation-delay: 5.5s;
     animation-fill-mode: forwards;
@@ -836,9 +836,9 @@ p {
 
 .rose3 {
     left: 25%;
-    -webkit-
-    -webkit-
-    -webkit-
+    -webkit-animation: flower-drop3 5s;
+    -webkit-animation-delay: 6s;
+    -webkit-animation-fill-mode: forwards;
     animation: flower-drop3 5s;
     animation-delay: 6s;
     animation-fill-mode: forwards;
@@ -846,9 +846,9 @@ p {
 
 .rose4 {
     right: 25%;
-    -webkit-
-    -webkit-
-    -webkit-
+    -webkit-animation: flower-drop4 5s;
+    -webkit-animation-delay: 5s;
+    -webkit-animation-fill-mode: forwards;
     animation: flower-drop4 5s;
     animation-delay: 5s;
     animation-fill-mode: forwards;
@@ -856,9 +856,9 @@ p {
 
 .rose5 {
     right: 25%;
-    -webkit-
-    -webkit-
-    -webkit-
+    -webkit-animation: flower-drop5 5s;
+    -webkit-animation-delay: 5.5s;
+    -webkit-animation-fill-mode: forwards;
     animation: flower-drop5 5s;
     animation-delay: 5.5s;
     animation-fill-mode: forwards;
@@ -866,9 +866,9 @@ p {
 
 .rose6 {
     right: 25%;
-    -webkit-
-    -webkit-
-    -webkit-
+    -webkit-animation: flower-drop6 5s;
+    -webkit-animation-delay: 6s;
+    -webkit-animation-fill-mode: forwards;
     animation: flower-drop6 5s;
     animation-delay: 6s;
     animation-fill-mode: forwards;
