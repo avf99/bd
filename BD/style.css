@@ -101,6 +101,7 @@ p {
     position: absolute;
     left: 75%;
     top: 5%;
+    -webkit-background: radial-gradient(#fa8607, #fa961b,#fcb033,#fecc51,#ffe469,#fff57b);
     background: radial-gradient(#fa8607, #fa961b,#fcb033,#fecc51,#ffe469,#fff57b);
     -webkit-animation: sunshine 5s infinite;
     animation: sunshine 5s infinite;
