@@ -271,7 +271,7 @@ p {
     background: linear-gradient(#cc0000 0%, #cc0000 50%, transparent 50%, transparent 100%);
     border-radius: 50%;
     left: -10%;
-    -webkit-transform: rotate(135deg)
+    -webkit-transform: rotate(135deg);
     transform: rotate(135deg);
 }
 
@@ -281,7 +281,6 @@ p {
     left: -5%;
     width: 25%;
     height: 25%;
-/*    background-color: green;*/
     border-top-left-radius: calc(var(--crab-size) * 0.15);
     border-top: solid #cc0000 calc(var(--crab-size) * 0.075);
     -webkit-transform-origin: 100% calc(var(--crab-size) * 0.075);
