@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
 
 :root {
-
+    --crab-size: min(30vw, 30vh);
     --crab-arm-size: -webkit-calc(var(--crab-size)/20);
     --crab-arm-size: calc(var(--crab-size)/20);
-    --sun-diameter: 12vh;
+    --sun-diameter: min(12vh, 12vw);
     --cake-layer-color:
         0 -webkit-calc(var(--crab-size) * 0.01 * 1) 0px #553c13,
         0 -webkit-calc(var(--crab-size) * 0.01 * 2) 0px #553c13,
