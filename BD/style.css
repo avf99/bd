@@ -4,7 +4,7 @@
     --crab-size: min(30vh, 30vw);
     --crab-arm-size: -webkit-calc(var(--crab-size)/20);
     --crab-arm-size: calc(var(--crab-size)/20);
-    --sun-diameter: min(12vh, 12vw);
+    --sun-diameter: 12vh;
     --cake-layer-color:
         0 -webkit-calc(var(--crab-size) * 0.01 * 1) 0px #553c13,
         0 -webkit-calc(var(--crab-size) * 0.01 * 2) 0px #553c13,
