@@ -105,8 +105,8 @@ p {
 
 .starfish {
 	position: absolute;
-    top: 52%;
-    left: 0%;
+    top: 52vh;
+    left: 0vw;
     transform: scale(0.4)
 }
 /*************Crab*************/
