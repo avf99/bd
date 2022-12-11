@@ -947,13 +947,12 @@ p {
 
 @keyframes moving-crab {
     0% {
-	top: 50vh;
         right: -250px;
-        top: calc(50% - 0.5 * var(--crab-size));
+        top: calc(50vh - 0.5 * var(--crab-size));
     }
     
     100% {
-	top: 50vw;
+	calc(50vh - 0.5 * var(--crab-size));
         transform: translate(250px + calc(50vw - 0.5 * var(--crab-size)), 0)
     }   
 }
