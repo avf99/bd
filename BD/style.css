@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
 
 :root {
-    --crab-size: min(30vh, 30vw);
+
     --crab-arm-size: -webkit-calc(var(--crab-size)/20);
     --crab-arm-size: calc(var(--crab-size)/20);
     --sun-diameter: 12vh;
@@ -151,7 +151,7 @@ p {
     right: calc(50% - 37.5%);
     width: 75%;
     height: 60%;
-    background-color: #cc0000 ;
+    background-color: #cc0000;
     border-radius: 50%;
 }
 
