@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+@font-face {
+    font-family: "Italianno";
+    src: url("fonts/Italianno-Regular.tff");
+    src: url('fonts/italianno-regular-webfont.woff') format('woff');
+}
 
 :root {
     --crab-size: min(30vw, 25vh);
@@ -55,7 +59,7 @@ p {
     padding: 0;
     margin: 0;
     text-align: center;
-    font-family: "Italianno", cursive;
+    font-family: "Italianno", "Arial", sans-serif, cursive;
     font-weight: bold;
     font-size:40px;
     color: #0033a3;
