@@ -1,7 +1,7 @@
 @font-face {
     font-family: "Italianno";
-    src: url("fonts/Italianno-Regular.tff");
-    src: url('fonts/italianno-regular-webfont.woff') format('woff');
+    src: url("Italianno-Regular.tff") format('trutype');
+    src: url('italianno-regular-webfont.woff') format('woff');
 }
 
 :root {
