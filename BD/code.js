@@ -49,16 +49,4 @@ function playAudio() {
     congrats.play();
 }
 
-            function handleLoading() {
-                let preload = document.getElementById("preload");
-                let mainPage = document.getElementById("main");
-                
-                preload.style.display = "none";
-                mainPage.style.display = "block";
-                console.log("hey")
-            }
-            
-            window.onload = handleLoading()
-
-
 
