@@ -49,7 +49,7 @@ function playAudio() {
     congrats.play();
 }
 
-function hanleLoading() {
+function handleLoading() {
     document.body.style.display = "block";
 }
 
