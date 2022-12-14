@@ -30,7 +30,7 @@ html, body {
     position: relative;
 }
 
-body {
+svg, .wish {
     display: "none";
 }
 
