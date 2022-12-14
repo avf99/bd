@@ -49,4 +49,9 @@ function playAudio() {
     congrats.play();
 }
 
+function hanleLoading() {
+    document.body.style.display = "block";
+}
+
+window.onload = handleLoading();
 
