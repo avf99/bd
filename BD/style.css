@@ -1,7 +1,58 @@
 @font-face {
     font-family: "Italianno";
-    src: url("Italianno-Regular.tff") format('trutype');
-    src: url('italianno-regular-webfont.woff') format('woff');
+    src: url("fonts/Italianno-Regular.tff");
+    src: url('fonts/italianno-regular-webfont.woff') format('woff');
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    z-index: 99;
+}
+
+.words {
+    animation: loadingMove 5s infinite ease-in-out ;
+}
+
+
+.words:nth-child(1) {
+    animation-delay: 0.4s;
+}
+
+.words:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.words:nth-child(3) {
+    animation-delay: 0.2s;
+}
+.words:nth-child(4) {
+    animation-delay: 0.1s;
+}
+.words:nth-child(5) {
+    animation-delay: 0s;
+}
+.words:nth-child(6) {
+    animation-delay: -0.1s;
+}
+.words:nth-child(7) {
+    animation-delay: -0.2s;
+}
+@keyframes loadingMove {
+    0% {
+        position: relative;
+        left: -60%
+    }
+    
+    50% {
+        position: relative;
+        left: 0%;
+    }
+    
+    100% {
+        position: relative;
+        left: 60%;
+    }
 }
 
 :root {
@@ -35,6 +86,10 @@ html, body {
     position: relative;
 }
 
+.main {
+    display: none;
+}
+
 /**************Wish**************/
 
 .wish {
@@ -55,6 +110,7 @@ html, body {
 }
 
 p {
+    content: "";
     width: 100%;
     padding: 0;
     margin: 0;
@@ -68,17 +124,22 @@ p {
 .blow-out {
     margin: 0;
     padding: 10px;
-    font-family: "Italianno", cursive;
+    font-family: "Italianno", "Arial", sans-serif, cursive;
     font-weight: bold;
     font-size: 40px;
     background-color: #0033a3;
     color: #ffcc5c;
     border: none;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .blow-out:hover {
-    background-color: #0033a3;
+    background-color: #008800;
+}
+
+.blow-out:active {
+    background-color: #006538;
 }
 
 /*The Sun, The Sea and The Beach*/
