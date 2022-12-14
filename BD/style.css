@@ -30,15 +30,11 @@ html, body {
     position: relative;
 }
 
-svg {
-    display: none;
-}
-
 /**************Wish**************/
 
 .wish {
     position: absolute;
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     padding: 10px;
