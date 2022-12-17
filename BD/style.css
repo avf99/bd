@@ -60,15 +60,15 @@ p {
     color: #0033a3;
 }
 
-p:nth-child(1) {
+p:nth-child(1)::before {
     content: "Make a wish";
 }
 
-p:nth-child(2) {
+p:nth-child(2)::before {
     content: "And";
 }
 
-p:nth-child(3) {
+p:nth-child(3)::before {
     content: "Blow out your candles";
 }
 
