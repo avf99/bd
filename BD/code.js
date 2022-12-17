@@ -34,6 +34,10 @@ function blowOut() {
     var secondP = document.getElementById("secondP");
     var thirdP = document.getElementById("thirdP");
     
+    firstP.removeChild(firstP.children[0]);
+    secondP.removeChild(secondP.children[0]);
+    thirdP.removeChild(thirdP.children[0]);
+    
     firstP.innerHTML = "The audio is not necesseary";
     secondP.innerHTML = "Attention:";
     secondP.style.color = "#dd0000"
