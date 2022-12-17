@@ -62,14 +62,18 @@ p {
 
 p:nth-child(1)::before {
     content: "Make a wish";
+    font-family: "Italianno", "Arial", sans-serif, cursive;
 }
 
 p:nth-child(2)::before {
     content: "And";
+    font-family: "Italianno", "Arial", sans-serif, cursive;
 }
 
 p:nth-child(3)::before {
     content: "Blow out your candles";
+    font-family: "Italianno", "Arial", sans-serif, cursive;
+    
 }
 
 .blow-out {
