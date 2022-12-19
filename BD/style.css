@@ -57,7 +57,7 @@ p {
     text-align: center;
     font-family: "Italianno", "Arial", sans-serif, cursive;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 40px;
     color: #0033a3;
 }
 
@@ -66,7 +66,7 @@ p {
     padding: 10px;
     font-family: "Italianno", "Arial", sans-serif, cursive;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 40px;
     background-color: #0033a3;
     color: #ffcc5c;
     border: none;
@@ -1170,11 +1170,5 @@ p {
         top: 0%;
         left: 0%;
         opacity: 0;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    p, .blow-out {
-        font-size: 40px;
     }
 }
