@@ -54,7 +54,7 @@ function blowOut() {
     var secondP = document.getElementById("secondP");
     var thirdP = document.getElementById("thirdP");
     
-    firstP.innerHTML = "The audio is not necesseary";
+    firstP.innerHTML = "The audio is not necessary";
     secondP.innerHTML = "Attention:";
     secondP.style.color = "#dd0000"
     thirdP.innerHTML = "( Headphones needed )";
